@@ -1,15 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderNav from './Component/HeaderNav/HeaderNav';
+import { Routes, Route } from "react-router-dom";
+import Home from './Component/Home/Home';
+import SignIn from './Component/SignIn/SignIn';
+import SignUp from './Component/SignUp/SignUp';
 
 function App() {
   return (
-    <div className="App">
-      <button class="btn">Button</button>
-      <button class="btn btn-primary">Button</button>
-      <button class="btn btn-secondary">Button</button>
-      <button class="btn btn-accent">Button</button>
-      <button class="btn btn-ghost">Button</button>
-      <button class="btn btn-link">Button</button>
+    <div>
+      <HeaderNav></HeaderNav>
+      <Routes>
+        <Route path="/" element={<Home></Home>} />
+        <Route path='signin' element={<SignIn></SignIn>}></Route>
+        <Route path='signup' element={<SignUp></SignUp>}></Route>
+      </Routes>
     </div>
   );
 }
