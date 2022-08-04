@@ -19,6 +19,7 @@ const HeaderNav = () => {
                 <div className="navbar-end">
                     <Link className='btn btn-ghost' to='/signin'>Sign In</Link>
                     <Link className='btn btn-primary' to='/signup'>Sign Up</Link>
+                    <Link className='btn btn-primary' to='/dashboard'>Dashboard</Link>
                 </div>
             </div>
         </div>

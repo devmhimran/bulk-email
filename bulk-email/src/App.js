@@ -5,6 +5,11 @@ import { Routes, Route } from "react-router-dom";
 import Home from './Component/Home/Home';
 import SignIn from './Component/SignIn/SignIn';
 import SignUp from './Component/SignUp/SignUp';
+import ErrorPage from './Component/ErrorPage/ErrorPage';
+import Dashboard from './Component/Dashboard/Dashboard';
+import Form from './Component/Form/Form';
+import CreateNewForm from './Component/CreateNewForm/CreateNewForm';
+import EmailWizard from './Component/EmailWizard/EmailWizard';
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path='signin' element={<SignIn></SignIn>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
+        <Route path='dashboard' element={<Dashboard></Dashboard>}>
+          <Route index element={<CreateNewForm></CreateNewForm>}></Route>
+          <Route path='new' element={<EmailWizard></EmailWizard>}></Route>
+        </Route>
+        <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
       </Routes>
     </div>
   );
