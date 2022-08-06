@@ -19,16 +19,16 @@ const SignIn = () => {
                                 <p className='font-semibold mb-2'>Password</p>
                                 <input type="password" className="input input-bordered w-full max-w-xs" />
                                 <div className='mt-2 text-end'>
-                                    <Link class="link link-primary text-sm" to='/'>Forget your password?</Link>
+                                    <Link className="link link-primary text-sm" to='/'>Forget your password?</Link>
                                 </div>
                             </div>
                             <div className='input__field w-full mt-6'>
-                                <button class="btn btn-wide btn-primary w-full">Sign in</button>
+                                <button className="btn btn-wide btn-primary w-full">Sign in</button>
                             </div>
                         </form>
-                        <div class="flex flex-col w-full border-opacity-50">
-                            <div class="divider">OR</div>
-                            <button class="btn btn-wide btn-ghost border border-slate-400 w-full">Google</button>
+                        <div className="flex flex-col w-full border-opacity-50">
+                            <div className="divider">OR</div>
+                            <button className="btn btn-wide btn-ghost border border-slate-400 w-full">Google</button>
                         </div>
                     </div>
                 </div>

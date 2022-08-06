@@ -12,6 +12,7 @@ import CreateNewForm from './Component/CreateNewForm/CreateNewForm';
 import EmailWizard from './Component/EmailWizard/EmailWizard';
 import Goal from './Component/Goal/Goal';
 import PersonalizeType from './Component/PersonalizeType/PersonalizeType';
+import Loading from './Component/Loading/Loading';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path='signin' element={<SignIn></SignIn>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
+        <Route path='loading' element={<Loading></Loading>}></Route>
         <Route path='dashboard' element={<Dashboard></Dashboard>}>
           <Route index element={<CreateNewForm></CreateNewForm>}></Route>
           <Route path='new' element={<EmailWizard></EmailWizard>}></Route>
