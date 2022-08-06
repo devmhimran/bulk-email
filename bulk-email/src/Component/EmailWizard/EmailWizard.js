@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiUserGroup } from 'react-icons/hi';
 import { BsEnvelopeOpen } from 'react-icons/bs';
-import { RiNumber1 } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 const EmailWizard = () => {
     return (
@@ -21,17 +21,19 @@ const EmailWizard = () => {
                                 <p className='text-sm'>What are we pitching?</p>
                             </div>
                         </div>
-                        <div className="card border hover:border-cyan-500 my-1">
-                            <div className="card-body">
-                                <div className='flex item-center'>
-                                    <div className='inline-block align-middle text-3xl bg-teal-200 text-teal-700 p-3 rounded-full mr-4'><HiUserGroup></HiUserGroup></div>
-                                    <div className="email__wizard__info">
-                                        <p className='font-medium text-lg'>Find Tools</p>
-                                        <p className='text-inherit'>Find the right tools</p>
+                        <Link to='/dashboard/goal'>
+                            <div className="card border hover:border-cyan-500 my-1">
+                                <div className="card-body">
+                                    <div className='flex item-center'>
+                                        <div className='inline-block align-middle text-3xl bg-teal-200 text-teal-700 p-3 rounded-full mr-4'><HiUserGroup></HiUserGroup></div>
+                                        <div className="email__wizard__info">
+                                            <p className='font-medium text-lg'>Find Tools</p>
+                                            <p className='text-inherit'>Find the right tools</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                         <div className="card border hover:border-cyan-500 my-1">
                             <div className="card-body">
                                 <div className='flex item-center'>
